@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #eaf6ff, #d8efff, #bfe5ff);
+  color: #0b4f75;
+  line-height: 1.6;
+  transition: background 0.4s ease;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-header {
+  background: linear-gradient(90deg, #2793d1, #4fb3ea, #7cccf3);
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  box-shadow: 0 4px 15px rgba(0, 80, 130, 0.2);
+}
+
+.site-header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.menu-toggle {
+  display: none;
+  margin-top: 10px;
+  background: white;
+  color: #1f78b4;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 18px;
+  border-radius: 30px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  background: white;
+  color: #1f78b4;
+  transform: translateY(-2px) scale(1.05);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 30px;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.hero-text h2 {
+  font-size: 2rem;
+  color: #1b7bb8;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.hero-card img,
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 22px;
+  box-shadow: 0 12px 30px rgba(0, 90, 150, 0.18);
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.btn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 8px 18px rgba(0, 80, 130, 0.15);
+}
+
+.primary {
+  background: linear-gradient(90deg, #2d9cdb, #57bdf1);
+  color: white;
+}
+
+.secondary {
+  background: linear-gradient(90deg, #90d8fb, #d7f0ff);
+  color: #0f6ea7;
+}
+
+.cards-section {
+  padding: 20px 0 50px;
+}
+
+.cards-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1b7bb8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card,
+.big-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 22px rgba(0, 90, 150, 0.08);
+  transition: 0.3s;
+}
+
+.card:hover,
+.big-card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3,
+.big-card h2 {
+  color: #1b7bb8;
+  margin-bottom: 12px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.cat-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0, 90, 150, 0.12);
+}
+
+.cat-table thead {
+  background: linear-gradient(90deg, #2396d3, #63c2ee);
+  color: white;
+}
+
+.cat-table th,
+.cat-table td {
+  padding: 16px;
+  text-align: center;
+}
+
+.cat-table tbody tr:nth-child(even) {
+  background: #eef8ff;
+}
+
+.cat-table tbody tr:nth-child(odd) {
+  background: #dff2ff;
+}
+
+.cat-table tbody tr:hover {
+  background: #b8e3fa;
+  transition: 0.3s;
+}
+
+.pretty-list {
+  margin-top: 15px;
+  padding-left: 22px;
+}
+
+.pretty-list li {
+  margin-bottom: 10px;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+video,
+audio,
+iframe {
+  width: 100%;
+  max-width: 100%;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.94);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 90, 150, 0.1);
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1b7bb8;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 14px;
+  border: 2px solid #97d7f7;
+  border-radius: 12px;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: #2d9cdb;
+  box-shadow: 0 0 10px rgba(45, 156, 219, 0.2);
+}
+
+.site-footer {
+  margin-top: 30px;
+  text-align: center;
+  padding: 18px;
+  background: linear-gradient(90deg, #2793d1, #4fb3ea, #7cccf3);
+  color: white;
+}
+
+.floating {
+  animation: floatCat 3s ease-in-out infinite;
+}
+
+@keyframes floatCat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+/* Планшет */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .media-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Телефон */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .site-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 30px 0;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .card,
+  .big-card,
+  .contact-form {
+    padding: 18px;
+  }
+
+  .cat-table th,
+  .cat-table td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  iframe {
+    height: 220px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Очень маленький экран */
+@media (max-width: 480px) {
+  .container {
+    width: 94%;
+  }
+
+  .site-header {
+    padding: 18px 0;
+  }
+
+  .site-header h1 {
+    font-size: 1.3rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.25rem;
+  }
+
+  .hero-text p,
+  .card p,
+  .big-card p,
+  .pretty-list li {
+    font-size: 0.95rem;
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+
+  iframe {
+    height: 190px;
+  }
+}
