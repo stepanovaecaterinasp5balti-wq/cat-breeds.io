@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Связаться с нами</h1>
+      <button class="menu-toggle" onclick="toggleMenu()">☰ Меню</button>
+      <nav id="navMenu" class="nav">
+        <a href="../index.html">Главная</a>
+        <a href="breeds.html">Породы</a>
+        <a href="facts.html">Факты</a>
+        <a href="media.html">Медиа</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <form class="contact-form" onsubmit="sendForm(event)">
+        <h2>Напиши нам</h2>
+
+        <input type="text" id="name" placeholder="Введите имя" required>
+        <input type="email" id="email" placeholder="Введите email" required>
+        <input type="tel" id="phone" placeholder="Введите телефон" required>
+
+        <select id="breed" required>
+          <option value="">Выберите любимую породу</option>
+          <option>Мейн-кун</option>
+          <option>Сиамская</option>
+          <option>Британская</option>
+          <option>Шотландская вислоухая</option>
+        </select>
+
+        <textarea id="message" rows="5" placeholder="Ваше сообщение" required></textarea>
+
+        <button type="submit" class="btn primary">Отправить</button>
+        <button type="button" class="btn secondary" onclick="changeBackground()">Сменить фон</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 | Контакты</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

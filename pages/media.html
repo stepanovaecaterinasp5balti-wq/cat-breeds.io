@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Медиа</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Медиа о кошках</h1>
+      <button class="menu-toggle" onclick="toggleMenu()">☰ Меню</button>
+      <nav id="navMenu" class="nav">
+        <a href="../index.html">Главная</a>
+        <a href="breeds.html">Породы</a>
+        <a href="facts.html">Факты</a>
+        <a href="media.html">Медиа</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="media-grid">
+      <div class="card">
+        <h2>Видео</h2>
+        <video controls width="100%">
+          <source src="../video.mp4" type="video/mp4">
+          Ваш браузер не поддерживает видео.
+        </video>
+      </div>
+
+      <div class="card">
+        <h2>Аудио</h2>
+        <audio controls>
+          <source src="../audio.mp3" type="audio/mpeg">
+          Ваш браузер не поддерживает аудио.
+        </audio>
+      </div>
+    </section>
+
+    <section class="card big-card">
+      <h2>Видео с YouTube</h2>
+      <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/J---aiyznGQ"
+        title="Видео о кошках"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 | Медиа</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
