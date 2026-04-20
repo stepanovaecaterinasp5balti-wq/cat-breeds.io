@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Популярные породы кошек</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Популярные породы кошек</h1>
+      <p class="subtitle">Красивый сайт о самых любимых кошках</p>
+
+      <button class="menu-toggle" onclick="toggleMenu()">☰ Меню</button>
+
+      <nav id="navMenu" class="nav">
+        <a href="index.html">Главная</a>
+        <a href="pages/breeds.html">Породы</a>
+        <a href="pages/facts.html">Факты</a>
+        <a href="pages/media.html">Медиа</a>
+        <a href="pages/contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Добро пожаловать в мир кошек 🐾</h2>
+        <p>
+          На этом сайте ты узнаешь о популярных породах кошек, интересных фактах,
+          уходе за ними и сможешь посмотреть медиа-материалы.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn primary" onclick="showMessage()">Узнать больше</button>
+          <a class="btn secondary" href="pages/breeds.html">Смотреть породы</a>
+        </div>
+      </div>
+
+      <div class="hero-card floating">
+        <img src="images/cat1.jpg" alt="Красивая кошка">
+      </div>
+    </section>
+
+    <section class="cards-section">
+      <h2>Почему люди любят кошек?</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Ласковые</h3>
+          <p>Кошки дарят уют, спокойствие и хорошее настроение дома.</p>
+        </div>
+        <div class="card">
+          <h3>Красивые</h3>
+          <p>У каждой породы свой уникальный внешний вид и характер.</p>
+        </div>
+        <div class="card">
+          <h3>Умные</h3>
+          <p>Они быстро привыкают к дому, хозяину и своим привычкам.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 | Сайт о популярных породах кошек</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
